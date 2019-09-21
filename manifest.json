@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Kariyernet Login Popup Bypass",
+    "version": "1.0",
+  
+    "description": "kariyer.net sitesinde belli bir iş ilanına baktıktan sonra karşımıza inatla gelen ve kapatılamayan bir kayıt ol ekranı geliyor. Bu eklenti ile dilediğiniz kadar iş ilanına bakabilirsiniz. Eklentinin amacı kariyer.net sitesindeki giriş yap ekranını engellemektir. Siteye herhangi bir zarar vermez.",
+  
+    "icons": {
+      "48": "icons/icon48.png",
+      "96": "icons/icon96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.kariyer.net/is-ilani/*"],
+        "js": ["background.js"]
+      }
+    ]
+  
+  }
